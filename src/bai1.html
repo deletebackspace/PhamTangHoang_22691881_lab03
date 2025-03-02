@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  padding: 5px;
+}
+.container > div {
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+  text-align: center;
+}
+.container > div.footer {
+  grid-area: footer;
+  background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+.content-items{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <div><img src="assets/chefify.png" alt=""></div>
+    <div><input type="text"></div>
+    <div>What to cook</div>
+    <div>Recipes</div>
+    <div>Ingredients</div>
+    <div>Occasions</div>
+    <div>About us</div>
+    <div><img src="assets/checkboxpink.png" alt="">Your Recipe Box</div>
+    <div><img src="assets/avatar.png" alt=""></div>
+  </div>
+  <div class="menu"><img src="assets/menu.png" alt=""></div>
+  <div class="content">
+    <h1>fsdfsdf</h1>
+    <img src="assets/nothing.png" alt="">
+    <p>We have all your Independence Day sweets convered.</p>
+    <div class="content-items">
+        <div>Sweet Cake</div>
+        <div>Black Cake</div>
+        <div>Pozole Verde</div>
+        <div>Healthy food</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+        <p>About us</p>
+        <p>Welcome to our website, a wonderful place to explore and learn how to look like a pro</p>
+        <input type="text" placeholder="Enter your email"> <input type="button" value="Send">
+        <br>
+        <img src="assets/chefifywhite.png" alt=""> <span>2023 Charify Company</span> <span>Tems of Service Policy</span>
+    </div>
+    <div>
+        <p>Learn More</p>
+        <p>Our Cooks</p>
+        <p>See Our Features</p>
+        <p>FAQ</p>
+        <br>
+        <p>Shop</p>
+        <p>Gift Subscription</p>
+        <p>Send Us Feedback</p>
+    </div>
+    <div>
+        <p>Recipes</p>
+        <p>What to cook this week</p>
+        <p>Pasta</p>
+        <p>Dinner</p>
+        <p>Healthy</p>
+        <p>Vegetarian</p>
+        <p>Vegan</p>
+        <p>Christmas</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
