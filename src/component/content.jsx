@@ -1,17 +1,22 @@
+import { useEffect, useState } from "react";
+import Card from "./card";
+
 
 export default function Content(){
-
+    var [array,setArray]= useState([]);
+    useEffect(()=>{
+        var fn=fetch('https://67cd3597dd7651e464eda54f.mockapi.io/food')
+            .then((r)=>r.json().then((d)=>{
+                setArray(d);
+                console.log(array);
+            })
+            )
+    },[])
+    
+    // console.log(fn)
     return (
         <>
-            <h1>fsdfsdf</h1>
-            <img src="../src/assets/nothing.png" alt="" />
-            <p>We have all your Independence Day sweets convered.</p>
-            <div class="content-items">
-                <div>Sweet Cake</div>
-                <div>Black Cake</div>
-                <div>Pozole Verde</div>
-                <div>Healthy food</div>
-            </div>
+            <Card array={array}/>
         </>
     )
 }
